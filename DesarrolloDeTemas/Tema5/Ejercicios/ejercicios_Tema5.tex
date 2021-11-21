@@ -59,7 +59,7 @@
 \textsc{UNIVERSIDAD DE CANTABRIA, DEPARTAMENTO DE FÍSICA MODERNA} \\ [20pt] % Your university, school and/or department name(s)
 \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
 \huge Física de Partículas Elementales (G71) \\ % The assignment title
-\normalsize 4 Curso - Grado de Física - Doble Grado Física Matemáticas - Ejercicios Tema 1
+\normalsize 4 Curso - Grado de Física - Doble Grado Física Matemáticas - Ejercicios Tema 5
 \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
@@ -72,72 +72,70 @@
 %----------------------------------------------------------------------------------------
 %	PROBLEM 1
 %----------------------------------------------------------------------------------------
-\textbf{Cuestión 1.} El acelerador Tevatrón, situado en Fermilab, en el extraradio de la ciudad de Chicago, colisionaba protones
-con antiprotones en el sistema centro de masas y con una energía del centro de masas de $\sqrt{s}=$ 2 TeV. Con frecuencia la colisión
-se traducía en una interacción entre un quark u del protón y un antiquark $\bar{u}$ del antiprotón dando lugar a un muon y un antimuon en 
-el estado final $u\bar{u}\rightarrow\mu^{-}\mu^{+}$. El quark u y el antiquark $\bar{u}$ tienen un momento $x_u\vec{P}_p$ y $x_{\bar{u}}\vec{P}_{\bar{p}}$
-respectivamente, en donde $\vec{P}_p$ y $\vec{P}_{\bar{p}}$ son los momentos del protón y el antiprotón, y $x_u$ y $x_{\bar{u}}$ son dos números reales
-comprendidos entre 0 y 1. ¿Cuanto vale el módulo de $\vec{P}_p$ y $\vec{P}_{\bar{p}}$?. \textbf{(0.5 puntos)}. Suponiendo que la dirección y sentido
-del eje Z coincide con la dirección y sentido del movimiento de los protones, demuestra que si los dos muones resultantes se mueven hacia valores de z
-positivos entonces $x_u>x_{\bar{u}}$. \textbf{(0.5 puntos)}. Calcula el producto $x_ux_{\bar{u}}$ si el muon y el antimuon son detectados ambos
-con la mitad de la energía del protón inicial y formando un ángulo entre sí tal que $\cos{\theta}=1/2$. Asume que en todo momento las masas de los quarks
-y los muones son despreciables. \textbf{(1 punto)}.
-\\
-\\
-%----------------------------------------------------------------------------------------
-%       PROBLEM 2
-%----------------------------------------------------------------------------------------
-\textbf{Cuestión 2.} Supongamos que un operador A puede escriberse como $A=a_\mu\gamma^\mu$ en donde $a_\mu$ es un cuadrivector de números reales. 
-Demuestra que el anticonmutador $\{A, \gamma^\nu\}=2a^{\nu}$. \textbf{(0.5 puntos)}. Demuestra también que $\{A^2, \gamma^\nu\}=4Aa^\nu$. \textbf{(0.5 puntos)}.
-Finalmente considerando el operador $B=b_\mu\gamma^\mu+bI$ con $b_\mu$ un cuadrivector de números reales, b un número real e $I$ la matriz identidad,
-demostrar que $\{A,B\}$ sólo puede ser nulo cuando $a_\mu b^\mu=0$ y $b=0$. \textbf{(1 punto)}.   
-\\
-\\
-%----------------------------------------------------------------------------------------
-%       PROBLEM 3
-%----------------------------------------------------------------------------------------
-\textbf{Cuestión 3.} Definir los siguientes conceptos: Cuadricorriente de probabilidad, espinor adjunto, sección eficaz diferencial, teoría gauge. \textbf{(2 puntos)}.
-\\
-\\
-%----------------------------------------------------------------------------------------
-%       PROBLEM 4
-%----------------------------------------------------------------------------------------
-\textbf{Cuestión 4.} Considera los operadores $\Lambda_+ = \frac{m + \gamma_\mu p^\mu}{2m}$ y $\Lambda_- = \frac{m + \gamma_\mu p^\mu}{2m}$. Usando la ecuación
-de Dirac para espinores de partícula y antipartícula, demuestra cuál es el resultado de aplicar cada uno de ellos a dichos espinores de partícula y antipartícula. \textbf{(0.75 puntos)}.
-¿A la vista del resultado qué es lo que hacen estos operadores?. \textbf{(0.25 puntos)}. Demuestra que $\Lambda_+^2=\Lambda_+$ y que $\Lambda_+\Lambda_-=0$ sin usar
-los espinores.\textbf{(1 punto)}.
-\\
-\\
-%----------------------------------------------------------------------------------------
-%       PROBLEM 5
-%----------------------------------------------------------------------------------------
-\textbf{Cuestión 5.} ¿Qué relación guarda el llamado flujo invariante Lorentz con la sección eficaz?. \textbf{(0.5 puntos)}. Calcula el valor del flujo invariante Lorentz
-$F=4[(p^\mu_1p_{2\mu})^2 - m_1^2 m_2^2]^{1/2}$ para el caso en el que la partícula 1 tiene momento $\vec{p}_1$ y la partícula 2 está en reposo. \textbf{(1 punto)}. ¿Por qué
-con frecuencia se da la sección eficaz diferencial en términos de $\frac{d\sigma}{dt}$ donde t es el invariante de Mandelstam?. ¿Qué ventajas aporta esto en el contexto
-de la comparación de resultados en diferentes experimentos?. Razona tu respuesta. \textbf{(0.5 puntos)}. 
-  
-\vspace{3cm}
+\textbf{Cuestión 1.} Usando las amplitudes para estados de helicidad calcular la sección eficaz diferencial para el proceso $e+\mu\rightarrow e+\mu$, siguiendo
+los siguientes pasos:
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.6\linewidth]{espinores.png}
-\end{center}
-\caption{Espinores solución a la ecuación de Dirac y autoestados del operador helicidad.}
-\label{espinores}
-\end{figure}
+\begin{enumerate}
+\item Usando las reglas de Feynman para QED mostrar que el elemento de matriz de más bajo orden es:
+\begin{equation*}
+M_{fi} = -\frac{e^2}{(p_1-p_3)^2}g_{\mu\nu}[\bar{u}(p_3)\gamma^\mu u(p_1)][\bar{u}(p_4)\gamma^\nu u(p_2)]
+\end{equation*}
 
+\item Trabajando en el sistema de referencia del centro de masas y escribiendo los cuadrimomentos del electrón inicial y final como $p_1^\mu = (E_1, 0, 0, p)$ y $p_3^\mu = (E_1, p sin(\theta), 0, p cos(\theta))$, demuestra que las corrientes asociadas al electrón para las cuatro helicidades pueden escribirse como:
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.6\linewidth]{matrices.png}
-\end{center}
-\caption{Matrices de Dirac.}
-\label{matrices}
-\end{figure}
+\begin{eqnarray*}
+\bar{u_{\downarrow}}(p_3)\gamma^\mu u_{\downarrow}(p_1) &=& 2 (E_1 c, ps, -ips, pc) \\
+\bar{u_{\uparrow}}(p_3)\gamma^\mu u_{\downarrow}(p_1) &=& 2 (ms, 0, 0, 0) \\
+\bar{u_{\uparrow}}(p_3)\gamma^\mu u_{\uparrow}(p_1) &=& 2 (E_1 c, ps, ips, pc) \\
+\bar{u_{\downarrow}}(p_3)\gamma^\mu u_{\uparrow}(p_1) &=& -2 (ms, 0, 0, 0)
+\end{eqnarray*}
 
+siendo $s = sin(\theta / 2)$ y $c = cos(\theta/2)$.
 
+\item Explicar por qué el efecto de aplicar el operador de paridad $P=\gamma^0$ es:
 
+\begin{equation*}
+P\bar{u_{\uparrow}}(p, \theta, \phi) = Pu_{\downarrow}(p, \pi - \theta, \pi + \phi) 
+\end{equation*}
 
+y calcula haciendo uso de ello las corrientes asociadas a los muones de las distintas combinaciones de helicidad.
+
+\item Para el caso relativista $E>>M$, muestra que el elemento de matriz al cuadrado para el caso en el que tanto el electrón como el muon incidentes son left-handed, está dado por: 
+
+\begin{equation*}
+|M_{LL}|^2 = \frac{4e^2s^2}{(p_1-p_3)^4}
+\end{equation*}
+
+donde $s = (p_1 + p_ 2)^2$. Hallas las expresiones correspondientes para $M_{RR}$, $M_{RL}$ y $M_{LR}$.
+
+\item En el límite relativista demuestra que la sección eficaz diferencial para este proceso en el caso no polarizado en el sistema centro de masas es:
+
+\begin{equation*}
+\frac{d\sigma}{d\Omega} = \frac{2\alpha^2}{s} \frac{1 + 1/4(1 + cos^2(\theta))}{(1-cos^2(\theta))}
+\end{equation*}
+
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 2
+%----------------------------------------------------------------------------------------
+\textbf{Cuestión 2.} Demuestra que los operadores de proyección quiral cumplen: $P_R + P_L = I$, $P_RP_R=P_R$, $P_LP_L=P_L$ y $P_RP_L=0$. 
+\\
+\\
+%----------------------------------------------------------------------------------------
+%	PROBLEM 3
+%----------------------------------------------------------------------------------------
+\textbf{Cuestión 3.} Demuestra que:
+
+\begin{equation*}
+\Lambda^+ = \frac{m+\gamma^\mu p_\mu}{2m}\; \Lambda^- = \frac{m-\gamma^\mu p_\mu}{2m} 
+\end{equation*}
+
+son también operadores de proyección y demuestra que proyectan sobre los estados de partícula y antipartícula respectivamente.
+
+\begin{equation*}
+\Lambda^+ u= u, \Lambda^- v= v, \Lambda^+ v = \Lambda^- u = 0 
+\end{equation*}
 
 
 \end{document}
